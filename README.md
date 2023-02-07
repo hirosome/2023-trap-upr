@@ -9,7 +9,7 @@ Memory: 32 GB x 4 (128 GB)
 </br>
 
 ## Raw sequence data
-The raw deep sequencing data are deposited at DDBJ (DRA015587). The data contains two FASTQ files per sample due to paired-end sequencing (e.g., DRR438599_1.fastq sequenced from the 5' side and DRR438599_2.fastq sequenced from the 3' side, respectively). We only used _1.fastq for the analysis. In the _2.fastq, the sequencing starts with the poly(T) stretch on the 3' side and sequences through the homopolymer stretch, reducing the quality of sequence reads.  
+The raw deep sequencing data are deposited at DDBJ (DRA015587). The data contains two FASTQ files per sample due to paired-end sequencing (e.g., `DRR438599_1.fastq` sequenced from the 5' side and `DRR438599_2.fastq` sequenced from the 3' side, respectively). We only used `_1.fastq` for the analysis. In the `_2.fastq`, the sequencing starts with the poly(T) stretch on the 3' side and sequences through the homopolymer stretch, reducing the quality of sequence reads.  
 </br>
 
 ## Data Analysis with SlamDunk
