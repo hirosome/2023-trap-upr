@@ -1,11 +1,5 @@
 # Data analysis of RNA-seq and TRAP-seq
-This repository contains the code for analysis of RNA-seq and TRAP-seq data of Imai et al. (2023) *Simultaneous measurement of nascent transcriptome and translatome combined with metabolic RNA labeling and translating ribosome affinity purification*.  
-</br>
-
-## Computer
-OS: Ubuntu 20.04.4 LTS  
-CPU: AMD Ryzen 9 5950X 16-Core Processor  
-Memory: 32 GB x 4 (128 GB)  
+This repository contains the code for analysis of RNA-seq and TRAP-seq data of [Imai et al. (2023) *Simultaneous measurement of nascent transcriptome and translatome using 4-thiouridine metabolic RNA labeling and translating ribosome affinity purification*](https://www.biorxiv.org/content/10.1101/2023.02.15.525786v1).  
 </br>
 
 ## Raw sequence data
