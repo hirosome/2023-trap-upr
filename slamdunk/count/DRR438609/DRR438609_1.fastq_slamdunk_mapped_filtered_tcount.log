@@ -1,0 +1,2 @@
+Using 148 as maximum read length.
+Warning: MD5 checksum of annotation (27b6d2bfeb860a3d83e1c37a786d42ca) does not matched MD5 in filtered BAM files (). Most probably the annotation filed changed after the filtered BAM files were created.
