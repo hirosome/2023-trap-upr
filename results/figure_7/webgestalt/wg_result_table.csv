@@ -1,11 +1,11 @@
 ﻿Gene Set,Description,Size,Expect,Ratio,P Value,FDR
-GO:0033554,cellular response to stress,1867,25.096,2.9088,<2.2e-16,<2.2e-16
-GO:0034976,response to endoplasmic reticulum stress,268,3.6025,11.103,<2.2e-16,<2.2e-16
-GO:0035966,response to topologically incorrect protein,188,2.5271,11.871,<2.2e-16,<2.2e-16
-GO:0006986,response to unfolded protein,168,2.2583,12.842,<2.2e-16,<2.2e-16
-GO:0035967,cellular response to topologically incorrect protein,150,2.0163,13.391,<2.2e-16,<2.2e-16
-GO:0034620,cellular response to unfolded protein,132,1.7744,14.653,<2.2e-16,<2.2e-16
-GO:0030968,endoplasmic reticulum unfolded protein response,115,1.5458,16.819,<2.2e-16,<2.2e-16
-GO:0006984,ER-nucleus signaling pathway,45,0.6049,23.144,4.44E-16,5.05E-13
-GO:1905897,regulation of response to endoplasmic reticulum stress,78,1.0485,15.26,5.44E-15,5.50E-12
-GO:0070059,intrinsic apoptotic signaling pathway in response to endoplasmic reticulum stress,61,0.81997,17.074,5.40E-14,4.91E-11
+GO:0006984,ER-nucleus signaling pathway,45,0.39508,22.78,1.59E-10,4.51E-08
+GO:1903513,endoplasmic reticulum to cytosol transport,28,0.24583,16.271,0.00009864,0.0083844
+GO:0035966,response to topologically incorrect protein,188,1.6506,12.723,<2.2e-16,<2.2e-16
+GO:0034976,response to endoplasmic reticulum stress,268,2.3529,12.325,<2.2e-16,<2.2e-16
+GO:0032527,protein exit from endoplasmic reticulum,47,0.41264,12.117,0.000055114,0.0052052
+GO:0043620,regulation of DNA-templated transcription in response to stress,78,0.68481,10.222,0.000005382,0.0011437
+GO:0006457,protein folding,210,1.8437,5.4238,0.000016125,0.0022843
+GO:0097193,intrinsic apoptotic signaling pathway,285,2.5022,4.7958,7.84E-06,0.0013332
+GO:0034248,regulation of cellular amide metabolic process,385,3.3802,3.846,0.00003394,0.0036061
+GO:0031667,response to nutrient levels,483,4.2406,3.5373,0.000021908,0.0026603
