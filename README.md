@@ -6,12 +6,12 @@ This repository contains the code for analysis of RNA-seq and TRAP-seq data of [
 The raw deep sequencing data are deposited at DDBJ (DRA015587). The data contains two FASTQ files per sample due to paired-end sequencing (e.g., `DRR438599_1.fastq` sequenced from the 5' side and `DRR438599_2.fastq` sequenced from the 3' side, respectively). We only used `_1.fastq` for the analysis. In the `_2.fastq`, the sequencing starts with the poly(T) stretch on the 3' side and sequences through the homopolymer stretch, reducing the quality of sequence reads.  
 </br>
 
-## Data Analysis with SLAM-DUNK
-The raw sequence data were analyzed using SLAM-DUNK v 0.4.2 ([Neuman T. et al., 2019](https://bmcbioinformatics.biomedcentral.com/articles/10.1186/s12859-019-2849-7)), a pipeline for SLAMseq data analysis, with the default parameters. The analysis environment was built with the following code in Docker.
+## Data Analysis with SlamDunk
+The raw sequence data were analyzed using SlamDunk v 0.4.2 ([Neuman T. et al., 2019](https://bmcbioinformatics.biomedcentral.com/articles/10.1186/s12859-019-2849-7)), a pipeline for SLAMseq data analysis, with the default parameters. The analysis environment was built with the following code in Docker.
 ```
 docker pull tobneu/slamdunk  # latest version in 2022
 ```
-The following code is an example for analysis by SLAM-DUNK. The sequence data were aligned on genome-wide 3' UTR sequences generated based on the human genome sequence (GRCh38.p13) and BED file containing coordinates for 3’ UTRs (`gencode.v41.costomized.canonical.bed`) generated from `gencode.v41.annotation.gff3` using `generate_costomized_BED.ipynb`. `gencode.v41.costomized.canonical.bed` and `generate_costomized_BED.ipynb` are in `/slamdunk/bed`. `alleyoop utrrates` was used to calculate the T>C conversion ratio. 
+The following code is an example for analysis by SlamDunk. The sequence data were aligned on genome-wide 3' UTR sequences generated based on the human genome sequence (GRCh38.p13) and BED file containing coordinates for 3’ UTRs (`gencode.v41.costomized.bed`) generated from `gencode.v41.annotation.gff3` using `generate_costomized_BED_ja.ipynb`. `gencode.v41.costomized.bed` and `generate_costomized_BED_ja.ipynb` are in `/slamdunk/bed`. `alleyoop utrrates` was used to calculate the T>C conversion ratio. 
 
 ```
 slamdunk map --trim-5p 12 --max-polya 4 --topn 100 --threads 16 --skip-sam --reference <reference fasta> --outputDir slamdunk/map <fastq file>
