@@ -11,7 +11,7 @@ The raw sequence data were analyzed using SlamDunk v 0.4.2 ([Neuman T. et al., 2
 ```
 docker pull tobneu/slamdunk  # latest version in 2022
 ```
-The following code is an example for analysis by SlamDunk. The sequence data were aligned on genome-wide 3' UTR sequences generated based on the human genome sequence (GRCh38.p13) and BED file containing coordinates for 3’ UTRs (`gencode.v41.costomized.bed`) generated from `gencode.v41.annotation.gff3` using `generate_costomized_BED_ja.ipynb`. `gencode.v41.costomized.bed` and `generate_costomized_BED_ja.ipynb` are in `/slamdunk/bed`. `alleyoop utrrates` was used to calculate the T>C conversion ratio. 
+The following code is an example for analysis by SlamDunk. The sequence data were aligned on genome-wide 3' UTR sequences generated based on the human genome sequence (GRCh38.p13) and BED file containing coordinates for 3’ UTRs (`gencode.v41.costomized.bed`) generated from `gencode.v41.annotation.gff3` using `generate_costomized_BED.ipynb`. `gencode.v41.costomized.bed` and `generate_costomized_BED.ipynb` are in `/slamdunk/bed`. `alleyoop utrrates` was used to calculate the T>C conversion ratio. 
 
 ```
 slamdunk map --trim-5p 12 --max-polya 4 --topn 100 --threads 16 --skip-sam --reference <reference fasta> --outputDir slamdunk/map <fastq file>
